@@ -1,0 +1,108 @@
+li {
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.contact_btn:hover,
+.fv7:hover,
+.profile_btn:hover {
+    box-shadow: 2px 2px 2px 2px rgba(23, 13, 44, 0.8);
+}
+
+.contact_btn:active,
+.fv7:active {
+    transform: translateX(2px) translateY(2px);
+    border-bottom: none;
+}
+
+.contact_btn,
+.fv7,
+.profile_btn {
+    transition:
+        background 0.5s,
+        box-shadow 0.5s,
+        color 0.5s,
+        transform 0.1s;
+}
+
+.service_link:hover {
+    transform: scale(1.03) translateY(-3px);
+    transition: all 0.5s;
+}
+
+.service_link:active {
+    transform: scale(1.03) translateY(0);
+    transition: transform 0.5s;
+}
+
+.service_link:link,
+.service_link:visited {
+    color: #5d2b11;
+    border: 1.5px solid #5d2b11;
+}
+
+.profile_btn:active {
+    transform: translateX(2px) translateY(2px);
+    border-bottom: none;
+}
+
+.news-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.news-list::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+    background: #5d2b11;
+    border-radius: 10px;
+}
+
+.news-list::-webkit-scrollbar-thumb:hover {
+    background: #683012;
+}
+
+.news-list dl:last-child {
+    border-bottom: none;
+}
+
+.back_to_top:hover p {
+    font-size: 0;
+}
+
+.back_to_top a::after {
+    content: "Dal Segno\A ↑Top";
+    white-space: pre;
+    position: absolute;
+    opacity: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    transition: .3s;
+    pointer-events: none;
+}
+
+.back_to_top a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back_to_top:active {
+    transform: rotate(0.05turn) translateY(4px);
+}
+
+@media (max-width:768px) {
+    li:hover {
+        transform: scale(1);
+    }
+}
