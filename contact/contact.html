@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>中村鈴奈HP お問い合わせページ</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/anime.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><img src="../images/logo.svg" alt="中村鈴奈　公式ウェブサイト"></h1>
+        <div class="header_title">
+            <img src="../images/segno.png" id="segno">
+            <h2>音楽が、一生の財産になる</h2>
+        </div>
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <nav class="nav">
+            <li><a href="../index.html" lang="en">Home</a></li>
+            <li><a href="../profile/profile.html" lang="en">Profile</a></li>
+            <li><a href="../performance/performance.html" lang="en">Performance</a></li>
+            <li><a href="../lesson/lesson.html" lang="en">Lesson</a></li>
+            <li><a href="#" lang="en">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <section id="title">
+            <img src="../images/titlebg.png">
+            <div class="titletext">
+                <h2 lang="en">Contact</h2>
+                <small>お問い合わせ</small>
+            </div>
+        </section>
+        <p>音楽に関するご相談を、お気軽にお聞かせください。</p>
+        <section id="contact_list">
+            <form action="#" method="post">
+                <div class="form_row">
+                    <div class="form_name">
+                        <p>お名前</p>
+                        <div class="name_input">
+                            <div class="last_name">
+                                <label for="last_name">姓</label>
+                                <input type="text" id="last_name" name="last_name">
+                            </div>
+                            <div class="first_name">
+                                <label for="first_name">名</label>
+                                <input type="text" id="first_name" name="first_name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_mail">
+                        <label for="mail">メールアドレス</label>
+                        <input type="email" id="mail" placeholder="example@mail.jp" name="mail">
+                    </div>
+                    <div class="form_purpose">
+                        <p>お問い合わせ内容</p>
+                        <select id="purpose" name="purpose">
+                            <option value="">項目を選択してください</option>
+                        </select>
+                        <textarea id="message" name="message" placeholder="ご相談内容をご記入ください"></textarea>
+                    </div>
+                    <div class="form_age">
+                        <label for="age">年齢</label>
+                        <input type="number" id="age" name="age">
+                    </div>
+                    <div class="form_voice_type">
+                        <label for="voice_type">声種</label>
+                        <input type="text" id="voice_type" name="voice_type" placeholder="例：ソプラノ、女声">
+                    </div>
+                    <div class="form_lesson_purpose">
+                        <label for="lesson_purpose">レッスンの目的</label>
+                        <select id="lesson_purpose" name="lesson_purpose">
+                            <option value="">項目を選択してください</option>
+                        </select>
+                    </div>
+                    <div class="form_venue">
+                        <label for="venue">会場</label>
+                        <input type="text" id="venue" name="venue">
+                    </div>
+                    <div class="form_datetime">
+                        <label for="datetime">希望日時</label>
+                        <input type="datetime-local" id="datetime" name="datetime">
+                    </div>
+                    <div class="form_piano">
+                        <p>ピアノの有無</p>
+                        <div class="radio_group">
+                            <label>
+                                <input type="radio" name="piano" value="yes">
+                                有
+                            </label>
+                            <label>
+                                <input type="radio" name="piano" value="no">
+                                無
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form_details">
+                        <label for="details">依頼詳細</label>
+                        <textarea id="details" name="details" placeholder="希望曲・ジャンル、演奏時間の目安などご記入ください"></textarea>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="contact_bottom">
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">個人情報保護方針に同意します</label>
+            <p>送信する</p>
+        </section>
+        <div class="back_to_top">
+            <a href="#segno">
+                <p lang="en">D.S.</p>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h1 class="logo"><a href="#segno"><img src="../images/logo.svg" alt="中村鈴奈　公式ウェブサイト"></a></h1>
+            <nav class="nav">
+                <li><a href="../index.html" lang="en">Home</a></li>
+                <li><a href="../profile/profile.html" lang="en">Profile</a></li>
+                <li><a href="../performance/performance.html" lang="en">Performance</a></li>
+                <li><a href="../lesson/lesson.html" lang="en">Lesson</a></li>
+                <li><a href="#segno" lang="en">Contact</a></li>
+            </nav>
+        </div>
+        <p>
+            <small class="italiano" lang="en">Sempre con musica.</small><br>
+            <small class="copylight" lang="en">&copy;2026 Reina Nakamura</small>
+        </p>
+    </footer>
+    <script src="../js/jquery-4.0.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
